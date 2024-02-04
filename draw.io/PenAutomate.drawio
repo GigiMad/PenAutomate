@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-04T11:06:56.225Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 OPR/106.0.0.0" etag="QEVBxwPvAOZAZn59JT2k" version="23.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-04T11:07:31.604Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 OPR/106.0.0.0" etag="H0ohpTHlIyxIF8XqWdQE" version="23.1.1" type="github">
   <diagram name="Page-1" id="YQneNfIJC-kv5Mov8Hgv">
     <mxGraphModel dx="1450" dy="542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,7 +7,7 @@
         <mxCell id="FX0ZpY_ByNPHgCRoeu5s-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="FX0ZpY_ByNPHgCRoeu5s-1" target="FX0ZpY_ByNPHgCRoeu5s-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="FX0ZpY_ByNPHgCRoeu5s-1" value="Start" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start" parent="1" vertex="1">
+        <mxCell id="FX0ZpY_ByNPHgCRoeu5s-1" value="Start" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="374" y="30" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="FX0ZpY_ByNPHgCRoeu5s-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="FX0ZpY_ByNPHgCRoeu5s-2" target="FX0ZpY_ByNPHgCRoeu5s-4" edge="1">
@@ -37,7 +37,7 @@
         <mxCell id="yaoQ89y83PHDQ_CfoELI-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;" parent="1" source="yaoQ89y83PHDQ_CfoELI-1" target="yaoQ89y83PHDQ_CfoELI-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="yaoQ89y83PHDQ_CfoELI-1" value="Menu" style="rhombus;whiteSpace=wrap;html=1;dashed=0;" parent="1" vertex="1">
+        <mxCell id="yaoQ89y83PHDQ_CfoELI-1" value="Menu" style="rhombus;whiteSpace=wrap;html=1;dashed=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="374" y="272.5" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="yaoQ89y83PHDQ_CfoELI-6" value="&lt;br&gt;Terms of&lt;br&gt;Use" style="shape=manualInput;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -60,7 +60,7 @@
         <mxCell id="yaoQ89y83PHDQ_CfoELI-14" value="Start" style="shape=manualInput;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="150" y="390" width="60" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="yaoQ89y83PHDQ_CfoELI-19" value="End" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start" parent="1" vertex="1">
+        <mxCell id="yaoQ89y83PHDQ_CfoELI-19" value="End" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="740" y="410" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="yaoQ89y83PHDQ_CfoELI-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="yaoQ89y83PHDQ_CfoELI-12" target="yaoQ89y83PHDQ_CfoELI-19" edge="1">
@@ -81,7 +81,7 @@
         <mxCell id="lr8_1DjEzHT-qsHiypU1-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lr8_1DjEzHT-qsHiypU1-3" target="lr8_1DjEzHT-qsHiypU1-18">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="lr8_1DjEzHT-qsHiypU1-3" value="Menu 2" style="rhombus;whiteSpace=wrap;html=1;dashed=0;" vertex="1" parent="1">
+        <mxCell id="lr8_1DjEzHT-qsHiypU1-3" value="Menu 2" style="rhombus;whiteSpace=wrap;html=1;dashed=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="140" y="550" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="lr8_1DjEzHT-qsHiypU1-4" value="&lt;br&gt;Full&lt;br&gt;Scan" style="shape=manualInput;whiteSpace=wrap;html=1;" vertex="1" parent="1">
