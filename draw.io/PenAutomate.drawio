@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-03T14:49:36.864Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 OPR/106.0.0.0" etag="fwpbpqH8OodjzXN7ZcOg" version="23.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-04T10:31:58.585Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 OPR/106.0.0.0" etag="o_9w3o8aU3gWobGw_2ko" version="23.1.1" type="github">
   <diagram name="Page-1" id="YQneNfIJC-kv5Mov8Hgv">
     <mxGraphModel dx="1050" dy="542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -16,7 +16,7 @@
         <mxCell id="FX0ZpY_ByNPHgCRoeu5s-2" value="Software Launch" style="whiteSpace=wrap;html=1;dashed=0;" parent="1" vertex="1">
           <mxGeometry x="354" y="90" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="O9t4TsN7J5lvIn9FsC4p-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FX0ZpY_ByNPHgCRoeu5s-4" target="yaoQ89y83PHDQ_CfoELI-1">
+        <mxCell id="O9t4TsN7J5lvIn9FsC4p-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="FX0ZpY_ByNPHgCRoeu5s-4" target="yaoQ89y83PHDQ_CfoELI-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="FX0ZpY_ByNPHgCRoeu5s-4" value="Disclaimer" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;dashed=0;" parent="1" vertex="1">
@@ -40,19 +40,19 @@
         <mxCell id="yaoQ89y83PHDQ_CfoELI-1" value="Menu" style="rhombus;whiteSpace=wrap;html=1;dashed=0;" parent="1" vertex="1">
           <mxGeometry x="374" y="272.5" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="yaoQ89y83PHDQ_CfoELI-6" value="" style="shape=manualInput;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="yaoQ89y83PHDQ_CfoELI-6" value="&lt;br&gt;Terms of&lt;br&gt;Use" style="shape=manualInput;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="384" y="390" width="60" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="yaoQ89y83PHDQ_CfoELI-11" value="" style="shape=manualInput;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="yaoQ89y83PHDQ_CfoELI-11" value="Credits" style="shape=manualInput;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="490" y="390" width="60" height="70" as="geometry" />
         </mxCell>
         <mxCell id="yaoQ89y83PHDQ_CfoELI-12" value="Exit" style="shape=manualInput;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="590" y="390" width="60" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="yaoQ89y83PHDQ_CfoELI-13" value="" style="shape=manualInput;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="yaoQ89y83PHDQ_CfoELI-13" value="Options" style="shape=manualInput;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="270" y="390" width="60" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="yaoQ89y83PHDQ_CfoELI-14" value="" style="shape=manualInput;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="yaoQ89y83PHDQ_CfoELI-14" value="Start" style="shape=manualInput;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="150" y="390" width="60" height="70" as="geometry" />
         </mxCell>
         <mxCell id="yaoQ89y83PHDQ_CfoELI-19" value="End" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.start" parent="1" vertex="1">
