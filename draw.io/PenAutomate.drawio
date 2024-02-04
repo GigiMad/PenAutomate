@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-04T11:20:24.733Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 OPR/106.0.0.0" etag="YSQv6nZjNyyGaP5G-gF_" version="23.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-04T11:24:51.279Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 OPR/106.0.0.0" etag="0reQTPFqyNqjESoduyxW" version="23.1.1" type="github">
   <diagram name="Page-1" id="YQneNfIJC-kv5Mov8Hgv">
     <mxGraphModel dx="1450" dy="542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -107,6 +107,9 @@
         <mxCell id="lr8_1DjEzHT-qsHiypU1-6" value="&lt;br&gt;Manual&lt;br&gt;Scan" style="shape=manualInput;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="220" y="680" width="60" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="lr8_1DjEzHT-qsHiypU1-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lr8_1DjEzHT-qsHiypU1-7" target="lr8_1DjEzHT-qsHiypU1-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="lr8_1DjEzHT-qsHiypU1-7" value="&lt;br&gt;Create a business&lt;br&gt;report" style="shape=manualInput;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-60" y="680" width="60" height="70" as="geometry" />
         </mxCell>
@@ -161,6 +164,15 @@
         </mxCell>
         <mxCell id="lr8_1DjEzHT-qsHiypU1-32" value="Dark" style="shape=manualInput;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="740" y="740" width="60" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="lr8_1DjEzHT-qsHiypU1-43" value="Company" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="810" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lr8_1DjEzHT-qsHiypU1-44" value="Website" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="lr8_1DjEzHT-qsHiypU1-43">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lr8_1DjEzHT-qsHiypU1-45" value="Logo" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="lr8_1DjEzHT-qsHiypU1-43">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
