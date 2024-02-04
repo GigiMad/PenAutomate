@@ -7,7 +7,7 @@ customtkinter.set_default_color_theme("dark-blue")
 
 # Fenêtre root
 root = customtkinter.CTk()
-root.geometry("660x415")
+root.geometry("650x405")
 root.title("PenAutomate")
 root.iconbitmap("penautomate.ico")
 root.resizable(width=False, height=False)
@@ -27,29 +27,25 @@ canvas.create_image(0, 0, anchor="nw", image=tk_image)
 # Fonction du menu
 def start_penautomate():
     print("=== Start with PenAutomate ===")
-    # Ajoutez votre code pour le démarrage avec PenAutomate ici
 
 def options():
     print("=== Options ===")
-    # Ajoutez votre code pour les options ici
 
 def terms_of_use():
     print("=== Terms of Use ===")
-    # Ajoutez votre code pour les conditions d'utilisation ici
 
 def credits():
     print("=== Credits ===")
-    # Ajoutez votre code pour les crédits ici
 
 def exit_app():
     root.destroy()
 
 # Frame du menu à droite
 frame = customtkinter.CTkFrame(master=canvas)
-frame.place(relx=0.8, rely=0.5, anchor="center")  
+frame.place(relx=0.78, rely=0.5, anchor="center")  
 
 # Titre de la frame
-label = customtkinter.CTkLabel(master=frame, text="PenAutomate", font=("Lato", 24, "bold"))
+label = customtkinter.CTkLabel(master=frame, text="   PenAutomate   ", font=("Lato", 24, "bold"))
 label.pack(pady=12, padx=10)
 
 # Boutons pour le menu
