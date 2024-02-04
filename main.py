@@ -1,3 +1,4 @@
+from CTkMessagebox import CTkMessagebox
 import customtkinter
 from PIL import Image, ImageTk
 
@@ -31,8 +32,8 @@ def start_penautomate():
 def options():
     print("=== Options ===")
 
-def terms_of_use():
-    print("=== Terms of Use ===")
+def terms_of_use2():
+    CTkMessagebox(title="Info", message="This is a CTkMessagebox!")
 
 def credits():
     print("=== Credits ===")
@@ -55,7 +56,7 @@ button.pack(pady=12, padx=10)
 button = customtkinter.CTkButton(master=frame, text="Options", command=options, font=("Lato", 14, "bold"))
 button.pack(pady=12, padx=10)
 
-button = customtkinter.CTkButton(master=frame, text="Terms of Use", command=terms_of_use, font=("Lato", 14, "bold"))
+button = customtkinter.CTkButton(master=frame, text="Terms of Use", command=terms_of_use2, font=("Lato", 14, "bold"))
 button.pack(pady=12, padx=10)
 
 button = customtkinter.CTkButton(master=frame, text="Credits", command=credits, font=("Lato", 14, "bold"))
