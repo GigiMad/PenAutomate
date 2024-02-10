@@ -1,14 +1,12 @@
-from CTkMessagebox import CTkMessagebox
 import customtkinter
-from PIL import Image, ImageTk
 import subprocess
 import emoji
+import json
+from CTkMessagebox import CTkMessagebox
+from PIL import Image, ImageTk
 
+# Empêche la résolution automatique de Windows
 customtkinter.deactivate_automatic_dpi_awareness()
-
-# Apparence
-customtkinter.set_appearance_mode("dark")
-customtkinter.set_default_color_theme("dark-blue")
 
 # Fenêtre root
 root = customtkinter.CTk()
@@ -30,6 +28,14 @@ y_pos = (screen_height - window_height) // 2
 
 root.geometry("+{}+{}".format(x_pos, y_pos))
 
+# Importe la configuration du thème Light / Dark depus le fichier themes.json
+with open('themes.json', 'r') as file:
+    config = json.load(file)    
+
+# Apparence
+customtkinter.set_appearance_mode(config["appearance_mode"])
+customtkinter.set_default_color_theme("dark-blue")
+
 # Frame
 frame = customtkinter.CTkFrame(master=root, corner_radius=10, width=200, height=200)
 frame.place(relx=0.5, rely=0.5, anchor="center")
@@ -38,24 +44,32 @@ frame.place(relx=0.5, rely=0.5, anchor="center")
 label = customtkinter.CTkLabel(master=frame, text="   Options   ", font=("Lato", 24, "bold"))
 label.pack(pady=12, padx=10)
 
-def languages(choice):
-    print("test")
+# Fonctions du menu
+# THEMES
+def themes(mode):
+    # Change le thème dans themes.json avec le choix de l'utilisateur en minuscule
+    config["appearance_mode"] = mode.lower()
+    with open('themes.json', 'w') as file:
+        json.dump(config, file)
 
-def themes(choice):
-    print("test")
+    # Applique les modifications
+    customtkinter.set_appearance_mode(mode.lower())
 
+# BACK
 def back():
     root.destroy()
     subprocess.run(["python", "main.py"])
 
 
-# Boutons pour le menu dans la frame
-button = customtkinter.CTkButton(master=frame, text="\u25fe   Languages   \u25fe", command=languages, font=("Lato", 14, "bold"))
-button.pack(pady=12, padx=10)
+# MENU DEROULANT THEMES
+optionmenu_var = customtkinter.StringVar(value="Choose your theme")
+combobox = customtkinter.CTkOptionMenu(master=frame,
+                                       values=["Light", "Dark"],
+                                       command=themes,
+                                       variable=optionmenu_var)
+combobox.pack(padx=20, pady=10)
 
-button = customtkinter.CTkButton(master=frame, text="\u25fe   Themes   \u25fe", command=themes, font=("Lato", 14, "bold"))
-button.pack(pady=12, padx=10)
-
+# BOUTON BACK
 button = customtkinter.CTkButton(master=frame, text="Back", command=back, font=("Lato", 14, "bold"), fg_color="#22B14C", hover_color="#1A873A")
 button.pack(pady=12, padx=10)
 
