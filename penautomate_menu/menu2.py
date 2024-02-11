@@ -1,16 +1,22 @@
 import customtkinter
 import subprocess
 import json
+import os
 from PIL import Image, ImageTk
 
 # Empêche la résolution automatique de Windows
 customtkinter.deactivate_automatic_dpi_awareness()
 
+# Chemin des images
+icon_path = os.path.join("penautomate_images", "penautomate.ico")
+image_path = os.path.join("penautomate_images", "penautomate.png")
+pentestreport = os.path.join("penautomate_menu", "pentestreport", "pentestreport.py")
+
 # Fenêtre root
 root = customtkinter.CTk()
 root.geometry("500x500")
 root.title("PenAutomate")
-root.iconbitmap("penautomate.ico")
+root.iconbitmap(icon_path)
 root.resizable(width=False, height=False)
 
 # Centre la fenêtre au lancement
@@ -35,10 +41,11 @@ customtkinter.set_appearance_mode(config["appearance_mode"])
 customtkinter.set_default_color_theme("dark-blue")
 
 # Fonctions du menu
-# CREATE A BUSINESS REPORT
-def business_report():
-    print("=== Start with PenAutomate ===")
-
+# CREATE A PENTEST REPORT
+def pentest_report():
+    root.withdraw()
+    subprocess.Popen(["python", pentestreport])
+    
 # FULL SCAN
 def full_scan():
     print("=== Options ===")
@@ -57,33 +64,33 @@ def back():
     subprocess.run(["python", "main.py"])
 
 # Frame
-frame = customtkinter.CTkFrame(master=root, corner_radius=10, width=200, height=200)
+frame = customtkinter.CTkFrame(master=root, corner_radius=10)
 frame.place(relx=0.5, rely=0.5, anchor="center")
 
 # Titre de la frame
-label = customtkinter.CTkLabel(master=frame, text="   Start a penetration testing   ", font=("Lato", 24, "bold"))
+label = customtkinter.CTkLabel(master=frame, text="\U0001f47e   PenAutomate   \U0001f47e", font=("Lato", 24, "bold"))
 label.pack(pady=12, padx=10)
 
 # Boutons pour le menu dans la frame
-# BOUTON CREATE A BUSINESS REPORT
-button = customtkinter.CTkButton(master=frame, text="Create a businesss report", command=business_report, font=("Lato", 14, "bold"))
-button.pack(pady=12, padx=10)
+# BOUTON CREATE A PENTEST REPORT
+button = customtkinter.CTkButton(master=frame, text="\u25fe Pentest Report \u25fe", command=pentest_report, font=("Lato", 14, "bold"))
+button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON FULL SCAN
-button = customtkinter.CTkButton(master=frame, text="Full Scan", command=full_scan, font=("Lato", 14, "bold"))
-button.pack(pady=12, padx=10)
+button = customtkinter.CTkButton(master=frame, text="\u25fe Full Scan \u25fe", command=full_scan, font=("Lato", 14, "bold"))
+button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON MANUAL SCAN
-button = customtkinter.CTkButton(master=frame, text="Manual Scan", command=manual_scan, font=("Lato", 14, "bold"))
-button.pack(pady=12, padx=10)
+button = customtkinter.CTkButton(master=frame, text="\u25fe Manual Scan \u25fe", command=manual_scan, font=("Lato", 14, "bold"))
+button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON WHAT TO KNOW
-button = customtkinter.CTkButton(master=frame, text="What to know", command=what_to_know, font=("Lato", 14, "bold"))
-button.pack(pady=12, padx=10)
+button = customtkinter.CTkButton(master=frame, text="\u25fe What to know \u25fe", command=what_to_know, font=("Lato", 14, "bold"))
+button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON BACK
 button = customtkinter.CTkButton(master=frame, text="Back", command=back, font=("Lato", 14, "bold"), fg_color="#22B14C", hover_color="#1A873A")
-button.pack(pady=12, padx=10)
+button.pack(pady=12, padx=10,fill=("both"))
 
 # Main Loop
 root.mainloop()

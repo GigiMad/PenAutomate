@@ -1,18 +1,22 @@
 import customtkinter
 import subprocess
-import emoji
 import json
-from CTkMessagebox import CTkMessagebox
+import os
 from PIL import Image, ImageTk
 
 # Empêche la résolution automatique de Windows
 customtkinter.deactivate_automatic_dpi_awareness()
 
+# Chemin des images
+icon_path = os.path.join("penautomate_images", "penautomate.ico")
+image_path = os.path.join("penautomate_images", "penautomate.png")
+menu_path = os.path.join("penautomate_menu", "menu2.py")
+
 # Fenêtre root
 root = customtkinter.CTk()
 root.geometry("500x500")
 root.title("PenAutomate")
-root.iconbitmap("penautomate.ico")
+root.iconbitmap(icon_path)
 root.resizable(width=False, height=False)
 
 # Centre la fenêtre au lancement
@@ -38,7 +42,7 @@ customtkinter.set_default_color_theme("dark-blue")
 
 # Chargement de l'image et redimensionnement
 image_name = "penautomate.png"
-original_image = Image.open(image_name)
+original_image = Image.open(image_path)
 original_image.thumbnail((200, 200))
 tk_image = ImageTk.PhotoImage(original_image)
 
@@ -81,7 +85,7 @@ canvas.tag_bind(image_id, '<Leave>', reset_image_position)
 # START
 def start_penautomate():
     root.withdraw()
-    subprocess.Popen(["python", "menu2.py"])
+    subprocess.Popen(["python", menu_path])
 
 # OPTIONS
 def options():
@@ -112,23 +116,23 @@ label.pack(pady=12, padx=10)
 # Boutons pour le menu dans la frame
 # BOUTON START
 button = customtkinter.CTkButton(master=frame, text="\u25fe Start \u25fe", command=start_penautomate, font=("Lato", 14, "bold"))
-button.pack(pady=12, padx=10)
+button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON OPTIONS
 button = customtkinter.CTkButton(master=frame, text="\u25fe Options \u25fe", command=options, font=("Lato", 14, "bold"))
-button.pack(pady=12, padx=10)
+button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON TERMS OF USE
 button = customtkinter.CTkButton(master=frame, text="\u25fe Terms of Use \u25fe", command=terms_of_use, font=("Lato", 14, "bold"))
-button.pack(pady=12, padx=10)
+button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON CREDITS
 button = customtkinter.CTkButton(master=frame, text="\u25fe Credits \u25fe", command=credits, font=("Lato", 14, "bold"))
-button.pack(pady=12, padx=10)
+button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON EXIT
 button = customtkinter.CTkButton(master=frame, text="Exit", command=exit_app, font=("Lato", 14, "bold"), fg_color="#880015", hover_color="#5C000E")
-button.pack(pady=12, padx=10)
+button.pack(pady=12, padx=10, fill=("both"))
 
 # Main Loop
 root.mainloop()

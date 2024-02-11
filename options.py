@@ -1,18 +1,22 @@
 import customtkinter
 import subprocess
-import emoji
+import os
 import json
-from CTkMessagebox import CTkMessagebox
 from PIL import Image, ImageTk
 
 # Empêche la résolution automatique de Windows
 customtkinter.deactivate_automatic_dpi_awareness()
 
+# Chemin des images
+icon_path = os.path.join("penautomate_images", "penautomate.ico")
+image_path = os.path.join("penautomate_images", "penautomate.png")
+
+
 # Fenêtre root
 root = customtkinter.CTk()
 root.geometry("500x500")
 root.title("PenAutomate")
-root.iconbitmap("penautomate.ico")
+root.iconbitmap(icon_path)
 root.resizable(width=False, height=False)
 
 # Centrez la fenêtre au lancement

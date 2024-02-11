@@ -1,16 +1,21 @@
 import customtkinter
 import subprocess
 import json
+import os
 from PIL import Image, ImageTk
 
 # Empêche la résolution automatique de Windows
 customtkinter.deactivate_automatic_dpi_awareness()
 
+# Chemin des images
+icon_path = os.path.join("penautomate_images", "penautomate.ico")
+image_path = os.path.join("penautomate_images", "penautomate.png")
+
 # Fenêtre root
 root = customtkinter.CTk()
 root.geometry("500x500")
 root.title("Terms of use")
-root.iconbitmap("penautomate.ico")
+root.iconbitmap(icon_path)
 root.resizable(width=False, height=False)
 
 # Centre la fenêtre au lancement
@@ -86,6 +91,7 @@ text = customtkinter.CTkTextbox(master=root, width=500, height = 460, corner_rad
 text.grid(row=0, column=0)
 text.insert("0.0", terms_text)
 text.configure(state="disabled")
+
 
 # BOUTON BACK
 button = customtkinter.CTkButton(master=root, text="Back", command=back, font=("Lato", 14, "bold"), fg_color="#22B14C", hover_color="#1A873A")
