@@ -70,11 +70,11 @@ optionmenu_var = customtkinter.StringVar(value="Choose your theme")
 combobox = customtkinter.CTkOptionMenu(master=frame,
                                        values=["Light", "Dark"],
                                        command=themes,
-                                       variable=optionmenu_var)
+                                       variable=optionmenu_var, fg_color="#1C123D", button_color="#1C123D")
 combobox.pack(padx=20, pady=10)
 
 # BOUTON BACK
-button = customtkinter.CTkButton(master=frame, text="Back", command=back, font=("Lato", 14, "bold"), fg_color="#22B14C", hover_color="#1A873A")
+button = customtkinter.CTkButton(master=frame, text="Back", command=back, font=("Lato", 14, "bold"), fg_color="#1C123D", hover_color="#140D2C")
 button.pack(pady=12, padx=10)
 
 

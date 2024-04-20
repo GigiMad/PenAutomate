@@ -57,29 +57,10 @@ image_width = tk_image.width()
 image_height = tk_image.height()
 
 x = (canvas_width - image_width) // 2
-y = (canvas_height - image_height) // 2
+y = (canvas_height - image_height) // 2.5
 
 # Affichage de penautomate.png
 image_id = canvas.create_image(x, y, anchor="w", image=tk_image)
-
-# Déplace l'image penautomate.png progressivement vers le haut dès que la souris la survole
-move_step = 0
-def move_image_up(event, steps=10):
-    global move_step
-    if steps > 0:
-        canvas.move(image_id, 0, -move_step)
-        move_step += 1
-        root.after(30, lambda: move_image_up(event, steps - 1))
-    else:
-        move_step = 0
-
-# Ramene l'image penautomate.png à sa position initiale dès que la souris ne la survole plus
-def reset_image_position(event):
-    canvas.coords(image_id, x, y)
-
-# Lie les fonctions aux événements du déplacement de penautomate.png
-canvas.tag_bind(image_id, '<Enter>', lambda event: move_image_up(event, steps=10))
-canvas.tag_bind(image_id, '<Leave>', reset_image_position)
 
 # Fonctions du menu
 # START
@@ -115,19 +96,19 @@ label.pack(pady=12, padx=10)
 
 # Boutons pour le menu dans la frame
 # BOUTON START
-button = customtkinter.CTkButton(master=frame, text="\u25fe Start \u25fe", command=start_penautomate, font=("Lato", 14, "bold"))
+button = customtkinter.CTkButton(master=frame, text="\u25fe Start \u25fe", command=start_penautomate, font=("Lato", 14, "bold"), fg_color="#1C123D", hover_color="#140D2C")
 button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON OPTIONS
-button = customtkinter.CTkButton(master=frame, text="\u25fe Options \u25fe", command=options, font=("Lato", 14, "bold"))
+button = customtkinter.CTkButton(master=frame, text="\u25fe Options \u25fe", command=options, font=("Lato", 14, "bold"), fg_color="#1C123D", hover_color="#140D2C")
 button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON TERMS OF USE
-button = customtkinter.CTkButton(master=frame, text="\u25fe Terms of Use \u25fe", command=terms_of_use, font=("Lato", 14, "bold"))
+button = customtkinter.CTkButton(master=frame, text="\u25fe Terms of Use \u25fe", command=terms_of_use, font=("Lato", 14, "bold"), fg_color="#1C123D", hover_color="#140D2C")
 button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON CREDITS
-button = customtkinter.CTkButton(master=frame, text="\u25fe Credits \u25fe", command=credits, font=("Lato", 14, "bold"))
+button = customtkinter.CTkButton(master=frame, text="\u25fe Credits \u25fe", command=credits, font=("Lato", 14, "bold"), fg_color="#1C123D", hover_color="#140D2C")
 button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON EXIT
