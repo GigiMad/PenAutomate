@@ -2,5 +2,5 @@ customtkinter==5.2.2
 Pillow==10.1.0
 CtkMessagebox==2.5
 bs4==4.12.3
-panda
 dnspython==2.6.1
+theharvester==0.0.1
