@@ -4,3 +4,5 @@ CtkMessagebox==2.5
 bs4==4.12.3
 dnspython==2.6.1
 theharvester==0.0.1
+scapy==2.5.0
+ipaddress==1.0.23
