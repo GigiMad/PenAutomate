@@ -55,7 +55,6 @@ canvas_width = canvas.winfo_reqwidth()
 canvas_height = canvas.winfo_reqheight()
 image_width = tk_image.width()
 image_height = tk_image.height()
-
 x = (canvas_width - image_width) // 2
 y = (canvas_height - image_height) // 2.5
 
