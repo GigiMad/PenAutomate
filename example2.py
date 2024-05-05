@@ -4,7 +4,7 @@ from reportlab.pdfgen import canvas
 import json
 import os
 
-json_path = os.path.join("penautomate_menu", "pentestreport", "pentestreport2.json")
+json_path = os.path.join("penautomate_menu", "pentestreport", "pentestreport.json")
 
 def generate_pdf(filename, data):
     c = canvas.Canvas(filename, pagesize=letter)
