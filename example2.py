@@ -18,4 +18,4 @@ def generate_pdf(filename, data):
 if __name__ == "__main__":
     with open(json_path, 'r') as file:
         json_data = json.load(file)
-    generate_pdf("result.pdf", json_data)
+    generate_pdf("pentestreport.pdf", json_data)
