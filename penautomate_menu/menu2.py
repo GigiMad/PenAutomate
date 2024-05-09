@@ -45,16 +45,12 @@ customtkinter.set_default_color_theme("dark-blue")
 def pentest_report():
     root.withdraw()
     subprocess.Popen(["python", pentestreport])
-    
-# FULL SCAN
-def full_scan():
-    print("=== Options ===")
 
 # MANUAL SCAN
 def manual_scan():
     print("=== Options ===")
 
-# WHAT TO KNOWW
+# WHAT TO KNOW
 def what_to_know():
     print("=== Options ===")
 
@@ -74,10 +70,6 @@ label.pack(pady=12, padx=10)
 # Boutons pour le menu dans la frame
 # BOUTON CREATE A PENTEST REPORT
 button = customtkinter.CTkButton(master=frame, text="\u25fe Pentest Report \u25fe", command=pentest_report, font=("Lato", 14, "bold"), fg_color="#05213A", hover_color="#051d32")
-button.pack(pady=12, padx=10, fill=("both"))
-
-# BOUTON FULL SCAN
-button = customtkinter.CTkButton(master=frame, text="\u25fe Full Scan \u25fe", command=full_scan, font=("Lato", 14, "bold"), fg_color="#05213A", hover_color="#051d32")
 button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON MANUAL SCAN
