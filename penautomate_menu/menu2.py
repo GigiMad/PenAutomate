@@ -48,11 +48,11 @@ def pentest_report():
 
 # MANUAL SCAN
 def manual_scan():
-    print("=== Options ===")
+    print("=== Manual Scan ===")
 
 # WHAT TO KNOW
 def what_to_know():
-    print("=== Options ===")
+    print("=== What to Know ===")
 
 # BACK
 def back():
