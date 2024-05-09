@@ -95,19 +95,19 @@ label.pack(pady=12, padx=10)
 
 # Boutons pour le menu dans la frame
 # BOUTON START
-button = customtkinter.CTkButton(master=frame, text="\u25fe Start \u25fe", command=start_penautomate, font=("Lato", 14, "bold"), fg_color="#1C123D", hover_color="#140D2C")
+button = customtkinter.CTkButton(master=frame, text="\u25fe Start \u25fe", command=start_penautomate, font=("Lato", 14, "bold"), fg_color="#05213A", hover_color="#051d32")
 button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON OPTIONS
-button = customtkinter.CTkButton(master=frame, text="\u25fe Options \u25fe", command=options, font=("Lato", 14, "bold"), fg_color="#1C123D", hover_color="#140D2C")
+button = customtkinter.CTkButton(master=frame, text="\u25fe Options \u25fe", command=options, font=("Lato", 14, "bold"), fg_color="#05213A", hover_color="#051d32")
 button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON TERMS OF USE
-button = customtkinter.CTkButton(master=frame, text="\u25fe Terms of Use \u25fe", command=terms_of_use, font=("Lato", 14, "bold"), fg_color="#1C123D", hover_color="#140D2C")
+button = customtkinter.CTkButton(master=frame, text="\u25fe Terms of Use \u25fe", command=terms_of_use, font=("Lato", 14, "bold"), fg_color="#05213A", hover_color="#051d32")
 button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON CREDITS
-button = customtkinter.CTkButton(master=frame, text="\u25fe Credits \u25fe", command=credits, font=("Lato", 14, "bold"), fg_color="#1C123D", hover_color="#140D2C")
+button = customtkinter.CTkButton(master=frame, text="\u25fe Credits \u25fe", command=credits, font=("Lato", 14, "bold"), fg_color="#05213A", hover_color="#051d32")
 button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON EXIT

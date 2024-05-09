@@ -73,19 +73,19 @@ label.pack(pady=12, padx=10)
 
 # Boutons pour le menu dans la frame
 # BOUTON CREATE A PENTEST REPORT
-button = customtkinter.CTkButton(master=frame, text="\u25fe Pentest Report \u25fe", command=pentest_report, font=("Lato", 14, "bold"), fg_color="#1C123D", hover_color="#140D2C")
+button = customtkinter.CTkButton(master=frame, text="\u25fe Pentest Report \u25fe", command=pentest_report, font=("Lato", 14, "bold"), fg_color="#05213A", hover_color="#051d32")
 button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON FULL SCAN
-button = customtkinter.CTkButton(master=frame, text="\u25fe Full Scan \u25fe", command=full_scan, font=("Lato", 14, "bold"), fg_color="#1C123D", hover_color="#140D2C")
+button = customtkinter.CTkButton(master=frame, text="\u25fe Full Scan \u25fe", command=full_scan, font=("Lato", 14, "bold"), fg_color="#05213A", hover_color="#051d32")
 button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON MANUAL SCAN
-button = customtkinter.CTkButton(master=frame, text="\u25fe Manual Scan \u25fe", command=manual_scan, font=("Lato", 14, "bold"), fg_color="#1C123D", hover_color="#140D2C")
+button = customtkinter.CTkButton(master=frame, text="\u25fe Manual Scan \u25fe", command=manual_scan, font=("Lato", 14, "bold"), fg_color="#05213A", hover_color="#051d32")
 button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON WHAT TO KNOW
-button = customtkinter.CTkButton(master=frame, text="\u25fe What to know \u25fe", command=what_to_know, font=("Lato", 14, "bold"), fg_color="#1C123D", hover_color="#140D2C")
+button = customtkinter.CTkButton(master=frame, text="\u25fe What to know \u25fe", command=what_to_know, font=("Lato", 14, "bold"), fg_color="#05213A", hover_color="#051d32")
 button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON BACK
