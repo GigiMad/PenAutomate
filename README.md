@@ -1,6 +1,6 @@
 # PenAutomate
 
-![Project Architecture](penautomates_images/penautomate.png)
+![PenAutomate](penautomate_images/penautomate.png)
 
 This project was created as part of my studies in the Master's program in Cybersecurity at Sup de Vinci Paris. The assignment was to create a toolbox for conducting automated penetration tests. This toolbox aims to simplify and streamline the process of identifying vulnerabilities in network systems.
 
