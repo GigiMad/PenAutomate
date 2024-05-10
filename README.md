@@ -1,6 +1,6 @@
 # PenAutomate
 <p align="center">
-  <img src="penautomate_images/PenAutomate_banner.png" alt="PenAutomate" width="300"/>
+  <img src="penautomate_images/PenAutomate_banner.png" alt="PenAutomate"/>
 </p>
 
 This project was created as part of my studies in the Master's program in Cybersecurity at Sup de Vinci Paris. The assignment was to create a toolbox for conducting automated penetration tests. This toolbox aims to simplify and streamline the process of identifying vulnerabilities in network systems.
