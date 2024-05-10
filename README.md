@@ -1,6 +1,7 @@
 # PenAutomate
-
-![PenAutomate](penautomate_images/penautomate.png)
+<p align="center">
+  <img src="penautomate_images/penautomate.png" alt="PenAutomate" width="300"/>
+</p>
 
 This project was created as part of my studies in the Master's program in Cybersecurity at Sup de Vinci Paris. The assignment was to create a toolbox for conducting automated penetration tests. This toolbox aims to simplify and streamline the process of identifying vulnerabilities in network systems.
 
@@ -13,12 +14,10 @@ Before you begin, ensure you have installed the following software on your syste
 
 ## Installation
 
-To install the necessary dependencies for this project, run the following command:
+To download the repository, you can follow these steps:
 
+### Option 1: Using Git
 
-To download the repository from the GitHub link you've provided, you can follow these steps:
-
-Option 1: Using Git
 If you have Git installed on your computer, you can clone the repository directly to your local machine. Here's how to do it:
 
 Open a command prompt or terminal window.
@@ -26,10 +25,12 @@ Choose a location on your computer where you want to clone the repository.
 Run the following command:
 ```bash
 git clone https://github.com/GigiMad/PenAutomate.git
-This will create a directory named PenAutomate in your current directory, containing all the files from the repository.
-Option 2: Download ZIP
-If you prefer not to use Git, you can download the repository as a ZIP file:
 ```
+This will create a directory named PenAutomate in your current directory, containing all the files from the repository.
+
+### Option 2: Download ZIP
+
+If you prefer not to use Git, you can download the repository as a ZIP file:
 
 Go to the repository page: PenAutomate on GitHub
 Click on the green "Code" button near the top of the repository.
@@ -41,6 +42,7 @@ cd /path/to/PenAutomate
 pip install -r requirements.txt
 ```
 
+## Get started
 ```bash
 python main.py
 ```
