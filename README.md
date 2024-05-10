@@ -39,6 +39,10 @@ Once the download is complete, extract the ZIP file to access the contents of th
 
 ```bash
 cd /path/to/PenAutomate
+```
+### Download requirements.txt
+
+```bash
 pip install -r requirements.txt
 ```
 
