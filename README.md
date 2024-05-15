@@ -1,9 +1,18 @@
 # PenAutomate
+
 <p align="center">
   <img src="penautomate_images/PenAutomate_banner.png" alt="PenAutomate"/>
 </p>
 
 This project was created as part of my studies in the Master's program in Cybersecurity at Sup de Vinci Paris. The assignment was to create a toolbox for conducting automated penetration tests. This toolbox aims to simplify and streamline the process of identifying vulnerabilities in network systems.
+
+## Table of Contents
+- [Prerequisites for Windows](#prerequisites-for-windows)
+- [Installation](#installation)
+  - [Using Git](#option-1-using-git)
+  - [Download ZIP](#option-2-download-zip)
+  - [Download requirements.txt](#download-requirementstxt)
+- [Get Started](#get-started)
 
 ## Prerequisites for Windows
 

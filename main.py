@@ -23,13 +23,10 @@ root.resizable(width=False, height=False)
 root.update_idletasks()
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
-
 window_width = root.winfo_width()
 window_height = root.winfo_height()
-
 x_pos = (screen_width - window_width) // 2
 y_pos = (screen_height - window_height) // 2
-
 root.geometry("+{}+{}".format(x_pos, y_pos))    
 
 # Importe la configuration du thème Light / Dark depus le fichier themes.json
@@ -56,7 +53,7 @@ canvas_height = canvas.winfo_reqheight()
 image_width = tk_image.width()
 image_height = tk_image.height()
 x = (canvas_width - image_width) // 2
-y = (canvas_height - image_height) // 2.5
+y = (canvas_height - image_height) // 2.25
 
 # Affichage de penautomate.png
 image_id = canvas.create_image(x, y, anchor="w", image=tk_image)
@@ -76,10 +73,6 @@ def options():
 def terms_of_use():
     root.withdraw()
     subprocess.Popen(["python", "termsofuse.py"])
-
-# CREDITS
-def credits():
-    print("=== Credits ===")
 
 # EXIT
 def exit_app():
@@ -104,10 +97,6 @@ button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON TERMS OF USE
 button = customtkinter.CTkButton(master=frame, text="\u25fe Terms of Use \u25fe", command=terms_of_use, font=("Lato", 14, "bold"), fg_color="#05213A", hover_color="#051d32")
-button.pack(pady=12, padx=10, fill=("both"))
-
-# BOUTON CREDITS
-button = customtkinter.CTkButton(master=frame, text="\u25fe Credits \u25fe", command=credits, font=("Lato", 14, "bold"), fg_color="#05213A", hover_color="#051d32")
 button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON EXIT
