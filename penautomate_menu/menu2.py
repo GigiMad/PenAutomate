@@ -11,6 +11,7 @@ customtkinter.deactivate_automatic_dpi_awareness()
 icon_path = os.path.join("penautomate_images", "penautomate.ico")
 image_path = os.path.join("penautomate_images", "penautomate.png")
 pentestreport = os.path.join("penautomate_menu", "pentestreport", "pentestreport.py")
+howtouse = os.path.join("penautomate_menu", "how2use.py")
 
 # Fenêtre root
 root = customtkinter.CTk()
@@ -46,13 +47,10 @@ def pentest_report():
     root.withdraw()
     subprocess.Popen(["python", pentestreport])
 
-# MANUAL SCAN
-def manual_scan():
-    print("=== Manual Scan ===")
-
-# WHAT TO KNOW
-def what_to_know():
-    print("=== What to Know ===")
+# HOW TO USE
+def how2use():
+    root.withdraw()
+    subprocess.Popen(["python", howtouse])
 
 # BACK
 def back():
@@ -72,12 +70,8 @@ label.pack(pady=12, padx=10)
 button = customtkinter.CTkButton(master=frame, text="\u25fe Pentest Report \u25fe", command=pentest_report, font=("Lato", 14, "bold"), fg_color="#05213A", hover_color="#051d32")
 button.pack(pady=12, padx=10, fill=("both"))
 
-# BOUTON MANUAL SCAN
-button = customtkinter.CTkButton(master=frame, text="\u25fe Manual Scan \u25fe", command=manual_scan, font=("Lato", 14, "bold"), fg_color="#05213A", hover_color="#051d32")
-button.pack(pady=12, padx=10, fill=("both"))
-
 # BOUTON WHAT TO KNOW
-button = customtkinter.CTkButton(master=frame, text="\u25fe What to know \u25fe", command=what_to_know, font=("Lato", 14, "bold"), fg_color="#05213A", hover_color="#051d32")
+button = customtkinter.CTkButton(master=frame, text="\u25fe How to use \u25fe", command=how2use, font=("Lato", 14, "bold"), fg_color="#05213A", hover_color="#051d32")
 button.pack(pady=12, padx=10, fill=("both"))
 
 # BOUTON BACK

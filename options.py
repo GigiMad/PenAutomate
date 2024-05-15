@@ -2,7 +2,6 @@ import customtkinter
 import subprocess
 import os
 import json
-from PIL import Image, ImageTk
 
 # Empêche la résolution automatique de Windows
 customtkinter.deactivate_automatic_dpi_awareness()
@@ -10,7 +9,6 @@ customtkinter.deactivate_automatic_dpi_awareness()
 # Chemin des images
 icon_path = os.path.join("penautomate_images", "penautomate.ico")
 image_path = os.path.join("penautomate_images", "penautomate.png")
-
 
 # Fenêtre root
 root = customtkinter.CTk()
@@ -23,13 +21,10 @@ root.resizable(width=False, height=False)
 root.update_idletasks()
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
-
 window_width = root.winfo_width()
 window_height = root.winfo_height()
-
 x_pos = (screen_width - window_width) // 2
 y_pos = (screen_height - window_height) // 2
-
 root.geometry("+{}+{}".format(x_pos, y_pos))
 
 # Importe la configuration du thème Light / Dark depus le fichier themes.json
@@ -64,19 +59,17 @@ def back():
     root.destroy()
     subprocess.run(["python", "main.py"])
 
-
 # MENU DEROULANT THEMES
 optionmenu_var = customtkinter.StringVar(value="Choose your theme")
 combobox = customtkinter.CTkOptionMenu(master=frame,
                                        values=["Light", "Dark"],
                                        command=themes,
-                                       variable=optionmenu_var, fg_color="#1C123D", button_color="#1C123D")
+                                       variable=optionmenu_var, fg_color="#05213A", button_color="#051d32")
 combobox.pack(padx=20, pady=10)
 
 # BOUTON BACK
-button = customtkinter.CTkButton(master=frame, text="Back", command=back, font=("Lato", 14, "bold"), fg_color="#1C123D", hover_color="#140D2C")
+button = customtkinter.CTkButton(master=frame, text="Back", command=back, font=("Lato", 14, "bold"), fg_color="#A66520", hover_color="#8A541B")
 button.pack(pady=12, padx=10)
-
 
 # Main Loop
 root.mainloop()

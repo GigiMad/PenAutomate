@@ -2,7 +2,6 @@ import customtkinter
 import subprocess
 import json
 import os
-from PIL import Image, ImageTk
 
 # Empêche la résolution automatique de Windows
 customtkinter.deactivate_automatic_dpi_awareness()
@@ -22,13 +21,10 @@ root.resizable(width=False, height=False)
 root.update_idletasks()
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
-
 window_width = root.winfo_width()
 window_height = root.winfo_height()
-
 x_pos = (screen_width - window_width) // 2
 y_pos = (screen_height - window_height) // 2
-
 root.geometry("+{}+{}".format(x_pos, y_pos))    
 
 # Importe la configuration du thème Light / Dark depus le fichier themes.json
@@ -39,7 +35,8 @@ with open('themes.json', 'r') as file:
 customtkinter.set_appearance_mode(config["appearance_mode"])
 customtkinter.set_default_color_theme("dark-blue")
 
-# Fonction Back pour revenu au main.py
+# Fonctions du menu
+# BACK
 def back():
     root.destroy()
     subprocess.run(["python", "main.py"])
@@ -86,12 +83,11 @@ These terms of use shall be governed by and construed in accordance with the law
 
 By using PenAutomate, you acknowledge that you have read, understood, and agree to these terms of use. If you do not agree with any part of these terms, refrain from using PenAutomate. PenAutomate reserves the right to modify these terms at any time without prior notice.
 """
-# Affichage du texte dans un menu déroulant    
+# LISTE DEROULANT E
 text = customtkinter.CTkTextbox(master=root, width=500, height = 460, corner_radius=0, activate_scrollbars=True)
 text.grid(row=0, column=0)
 text.insert("0.0", terms_text)
 text.configure(state="disabled")
-
 
 # BOUTON BACK
 button = customtkinter.CTkButton(master=root, text="Back", command=back, font=("Lato", 14, "bold"), fg_color="#22B14C", hover_color="#1A873A")

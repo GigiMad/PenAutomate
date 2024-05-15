@@ -59,4 +59,6 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
-
+<p align="center">
+  <img src="draw.io/PenAutomate.drawio.png" alt="DiagramPenAutomate"/>
+</p>

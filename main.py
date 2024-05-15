@@ -4,7 +4,7 @@ import json
 import os
 from PIL import Image, ImageTk
 
-# Empêche la résolution automatique de Windows
+# Paramètres applicatifs
 customtkinter.deactivate_automatic_dpi_awareness()
 
 # Chemin des images
